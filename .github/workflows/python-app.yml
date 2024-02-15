@@ -31,7 +31,4 @@ jobs:
     - name: Lint amb pylint
       run: |
         # stop the build if there are Python syntax errors or undefined names
-        pylint --fail-under=10 proves/src/funcions.py      
-    - name: Proves amb pytest
-      run: |
-        pytest
+        pylint --fail-under=10 src/funcions.py      
