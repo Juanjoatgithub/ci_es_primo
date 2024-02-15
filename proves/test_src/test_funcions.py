@@ -1,6 +1,6 @@
 import pytest
 
-from ..src.funcions import es_primo
+from src.funcions import es_primo
 
 def test_primo_1():
     assert es_primo(1) == False
