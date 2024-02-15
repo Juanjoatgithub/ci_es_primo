@@ -30,7 +30,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Añadir ruta del paquete src al PYTHONPATH
       run: |
-        export PYTHONPATH=$PYTHONPATH:${GITHUB_WORKSPACE}/src
+        export PYTHONPATH=$PYTHONPATH:/src
     - name: Lint amb pylint
       run: |
         # stop the build if there are Python syntax errors or undefined names
